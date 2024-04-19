@@ -30,3 +30,9 @@ The issue here is that the web server will never serve a page, but the /healthch
 If I switch back to node-adapter and reset the handler_default back to handler, the web server works perfectly fine.
 
 Once this issue is resolved, I can define my startup tasks in this intermediary script that in turn, calls up the SvelteKit compiled app.
+
+----
+
+UPATE: The custom server script updated, thanks to a suggestion by Paolo Ricciuti. Basically a modified version of the index.js found in the svelte-adapter-bun package.
+
+Next up, figuring out how to get context of the application.
